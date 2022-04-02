@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   test:
-    runs-on: windows-2016
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
       - run: python helloworld.py
