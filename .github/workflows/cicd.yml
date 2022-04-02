@@ -21,6 +21,5 @@ jobs:
           
       - name: Replace Strings
         run: |
-          (Get-Content -Path C:/home/runner/work/_temp/test) -replace key1: "ann.com/ann/ann", key1: "ann.com/ro/ro" | Add-Content -Path C:/home/runner/work/_temp/test
- 
+          sed -i 's/key1: "ann.com/ann/ann"/key1: "ann.com/ro/ro/g' test
     
