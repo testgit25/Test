@@ -18,4 +18,10 @@ jobs:
         with:
           name: helloworld
           path: .
+          
+      - name: Replace Strings
+        run: |
+          ((Get-Content -path C:\test -Raw) -replace 'key1: "ann.com/ann/ann"','key1: "ann.com/ro/ro"') | Set-Content -Path C:\test
+          ((Get-Content -path C:\test -Raw) -replace 'key2: "ro.com/ro/hit"','key2: "ro.com/ann/ann"') | Set-Content -Path C:\test
+ 
     
