@@ -23,5 +23,5 @@ jobs:
         run: |
           searchString="key1: "ann.com/ann/ann"";
           replaceString="key1: "ann.com/ro/ro"";
-          sed -i '' "s|$searchString|$replaceString|g" test
+          sed -i '' "s|$searchString|$replaceString|g" C:/home/runner/work/_temp/test
     
