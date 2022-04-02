@@ -21,5 +21,7 @@ jobs:
           
       - name: Replace Strings
         run: |
-          sed -i 's/key1: "ann.com/ann/ann"/key1: "ann.com/ro/ro/g' test
+          searchString="ann.com/ann/ann"";
+          replaceString="key1: "ann.com/ro/ro"";
+          sed -i '' "s|$searchString|$replaceString|g" test
     
