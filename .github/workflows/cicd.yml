@@ -22,5 +22,5 @@ jobs:
       - name: Replace Strings
         shell: pwsh
         run: |
-          Get-Content C:/home/runner/work/_temp/test
+          Get-Content /home/runner/work/_temp/test
   
