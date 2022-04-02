@@ -22,5 +22,5 @@ jobs:
       - name: Replace Strings
         shell: pwsh
         run: |
-          Get-Content $GITHUB_ACTION_PATH/test
+          Get-Content $GITHUB_PATH/test
   
